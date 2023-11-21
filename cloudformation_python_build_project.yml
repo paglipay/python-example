@@ -23,7 +23,7 @@ Resources:
         Type: GITHUB
         Auth:
             Type: OAUTH 
-        BuildSpec: python-example/buildspec.yml
+        BuildSpec: buildspec.yml
         Location: https://github.com/wes-novack/codebuild-demo
       TimeoutInMinutes: 5 
   CodeBuildRole:

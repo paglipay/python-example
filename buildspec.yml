@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - cd python-example && pip install -r requirements.txt
+      - pip install -r requirements.txt
       - pip install pycodestyle
   build:
     commands:
@@ -14,5 +14,5 @@ artifacts:
   files:
     - src/*
   discard-paths: yes
-  base-directory: python-example
+  base-directory: ./
   name: python-app-$(date +%Y-%m-%d-%H-%M-%S).zip
