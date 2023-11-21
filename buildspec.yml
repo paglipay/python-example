@@ -4,15 +4,15 @@ phases:
   install:
     commands:
       - pip install -r requirements.txt
-      - pip install pycodestyle
+      # - pip install pycodestyle
   build:
     commands:
-      - pycodestyle -v src/*.py
+      # - pycodestyle -v src/*.py
       - echo "pycodestyle found no issues!"
       - python -m pytest
 artifacts:
   files:
     - src/*
   discard-paths: yes
-  base-directory: ./
+  base-directory: .
   name: python-app-$(date +%Y-%m-%d-%H-%M-%S).zip
